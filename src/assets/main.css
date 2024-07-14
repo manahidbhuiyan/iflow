@@ -1,0 +1,48 @@
+/* banner area */
+.banner{
+  padding: 20px 0 40px;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+}
+.banner-box{
+  width: 740px;
+  padding: 25px;
+  background-color: #fff;
+  position: relative;
+  top: 70px;
+  left: 245px;
+}
+.banner-box h5{
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #0E2442;
+}
+.banner-box p{
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: normal;
+  color: #0E2442;
+  margin-bottom: 0;
+}
+.banner-inner img{
+  width: 100%;
+}
+.banner-inner p{
+  padding: 40px 10px 0;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 28px;
+  color: #0E2442;
+  text-align: center;
+  line-height: 32px;
+}
+
+/* isotop-section */
+.isotop-section{
+  padding: 80px 20px;
+  background-color: #F6F7F9;
+  height: auto;
+  text-align: center;
+}
