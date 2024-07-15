@@ -1,11 +1,11 @@
 /* banner area */
-.banner{
+.banner {
   padding: 20px 0 40px;
   overflow: hidden;
   position: relative;
   background-color: #fff;
 }
-.banner-box{
+.banner-box {
   width: 740px;
   padding: 25px;
   background-color: #fff;
@@ -13,36 +13,286 @@
   top: 70px;
   left: 245px;
 }
-.banner-box h5{
+.banner-box h5 {
   font-size: 30px;
   text-transform: capitalize;
   font-weight: 600;
-  color: #0E2442;
+  color: #0e2442;
 }
-.banner-box p{
+.banner-box p {
   font-size: 30px;
   text-transform: capitalize;
   font-weight: normal;
-  color: #0E2442;
+  color: #0e2442;
   margin-bottom: 0;
 }
-.banner-inner img{
+.banner-inner img {
   width: 100%;
 }
-.banner-inner p{
+.banner-inner p {
   padding: 40px 10px 0;
   width: 80%;
   margin: 0 auto;
   font-size: 28px;
-  color: #0E2442;
+  color: #0e2442;
   text-align: center;
   line-height: 32px;
 }
 
+/* company details area */
+.com-details {
+  padding: 70px 0;
+  background-color: #EDF5FE;
+}
+.details-title {
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.details-inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 16px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  padding: 40px 20px 20px;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+.card:hover {
+  cursor: pointer;
+  background-color: #e9efff;
+}
+
+.card h2 {
+  font-weight: 600;
+  color: #131839;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #000;
+  font-size: 16px;
+}
+
+.card-1 {
+  background-color: #e57661;
+  grid-row: span 2;
+  color: #fff;
+}
+.card-1 h2 {
+  color: #fff;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.card-1 p {
+  font-size: 24px;
+  color: #fff;
+}
+
+.card-1:hover {
+  background-color: #e57661; /* Keep the same background color on hover for card-1 */
+}
+
+/* Responsive adjustments */
+@media (min-width: 991.8px) and (max-width: 1300px) {
+  .details-inner {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 576.8px) and (max-width: 991px) {
+  .details-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .card-1 {
+    grid-row: auto;
+  }
+}
+@media (max-width: 576px) {
+  .details-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* isotop-section */
-.isotop-section{
+.isotop-section {
   padding: 80px 20px;
-  background-color: #F6F7F9;
+  background-color: #f6f7f9;
   height: auto;
   text-align: center;
 }
+
+/* consult area */
+.consult {
+  padding: 70px;
+}
+.consult {
+  position: relative;
+  overflow: hidden; /* Ensure the pseudo-element is contained within the parent */
+}
+
+.consult::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("../assets/images/consult-banner.png");
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  opacity: 0.95; /* Adjust the opacity as needed */
+  z-index: 1; /* Ensure the pseudo-element is behind the content */
+}
+.consult-content {
+  position: relative;
+  z-index: 2; /* Ensure the content is above the pseudo-element */
+}
+.consult-images {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.consult-images img {
+  width: 294px;
+}
+.consult-text p {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 50px 0;
+  font-size: 24px !important;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+}
+.consult-button {
+  text-align: center;
+}
+.btn-consult {
+  width: 380px;
+  padding: 8px;
+  background-color: #e57661;
+  border: 3px solid #f3f3f3;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 600;
+}
+.btn-consult:hover,
+.btn-consult:active,
+.btn-consult:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+  background-color: #e57661 !important;
+  color: #fff !important;
+  border-color: #f3f3f3 !important;
+  cursor: pointer;
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .consult {
+    padding: 50px;
+  }
+  .consult-images img {
+    width: 250px;
+  }
+}
+
+@media (min-width: 991.8px) and (max-width: 1200px) {
+  .navbar {
+    padding: 0 20px !important;
+    background-color: #0e2442;
+  }
+  .navbar-nav {
+    width: 100%;
+  }
+  .navbar-nav .nav-link {
+    padding: 5px;
+  }
+  .banner-box {
+    left: 160px;
+  }
+  .consult {
+    padding: 50px;
+  }
+  .consult-images img {
+    width: 200px;
+  }
+}
+
+@media (min-width: 768.8px) and (max-width: 991px) {
+  .banner-box {
+    left: 30px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .consult-images {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .banner-box {
+    width: 100%;
+    padding: 25px;
+    background-color: #fff;
+    position: relative;
+    top: 70px;
+    left: 0;
+  }
+  .com-details {
+    padding: 50px 0;
+    background-color: #EDF5FE;
+}
+  .details-title {
+    margin-bottom: 30px;
+  }
+  .isotop-section {
+    padding: 50px 20px;
+}
+}
+
+@media (max-width: 576px) {
+  .banner-box {
+    display: none !important;
+  }
+  .banner-inner p {
+    padding: 20px 10px 0;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+    color: #0e2442;
+    text-align: center;
+    line-height: 30px;
+  }
+  .com-details {
+    padding: 30px 0;
+  }
+  .element-item-inner {
+    margin: 10px !important;
+  }
+  .consult {
+    padding: 30px 10px;
+  }
+  .consult-images {
+    display: none;
+  }
+  .btn-consult {
+    width: 300px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
