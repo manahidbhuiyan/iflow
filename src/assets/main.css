@@ -1,5 +1,5 @@
 /* banner area */
-.banner {
+/* .banner {
   padding: 20px 0 40px;
   overflow: hidden;
   position: relative;
@@ -37,10 +37,10 @@
   color: #0e2442;
   text-align: center;
   line-height: 32px;
-}
+} */
 
 /* company details area */
-.com-details {
+/* .com-details {
   padding: 70px 0;
   background-color: #EDF5FE;
 }
@@ -56,7 +56,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 16px;
-}
+} */
 
 .card {
   background-color: white;
@@ -83,12 +83,12 @@
   font-size: 16px;
 }
 
-.card-1 {
+/* .card-1 {
   background-color: #e57661;
   grid-row: span 2;
   color: #fff;
-}
-.card-1 h2 {
+} */
+/* .card-1 h2 {
   color: #fff;
   font-size: 28px;
   margin-bottom: 20px;
@@ -96,14 +96,14 @@
 .card-1 p {
   font-size: 24px;
   color: #fff;
-}
+} */
 
-.card-1:hover {
-  background-color: #e57661; /* Keep the same background color on hover for card-1 */
-}
+/* .card-1:hover {
+  background-color: #e57661;
+} */
 
 /* Responsive adjustments */
-@media (min-width: 991.8px) and (max-width: 1300px) {
+/* @media (min-width: 991.8px) and (max-width: 1300px) {
   .details-inner {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -112,9 +112,9 @@
   .details-inner {
     grid-template-columns: repeat(2, 1fr);
   }
-}
+} */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .card-1 {
     grid-row: auto;
   }
@@ -123,24 +123,23 @@
   .details-inner {
     grid-template-columns: 1fr;
   }
-}
+} */
 
 /* isotop-section */
-.isotop-section {
+/* .isotop-section {
   padding: 80px 20px;
   background-color: #f6f7f9;
   height: auto;
   text-align: center;
-}
+} */
 
 /* consult area */
-.consult {
+
+/* .consult {
   padding: 70px;
-}
-.consult {
   position: relative;
-  overflow: hidden; /* Ensure the pseudo-element is contained within the parent */
-}
+  overflow: hidden; 
+} */
 
 .consult::before {
   content: "";
@@ -155,17 +154,17 @@
   opacity: 0.95; /* Adjust the opacity as needed */
   z-index: 1; /* Ensure the pseudo-element is behind the content */
 }
-.consult-content {
+/* .consult-content {
   position: relative;
-  z-index: 2; /* Ensure the content is above the pseudo-element */
-}
-.consult-images {
+  z-index: 2; 
+} */
+/* .consult-images {
   width: 100%;
   display: flex;
   justify-content: space-between;
   gap: 20px;
-}
-.consult-images img {
+} */
+/* .consult-images img {
   width: 294px;
 }
 .consult-text p {
@@ -179,8 +178,8 @@
 }
 .consult-button {
   text-align: center;
-}
-.btn-consult {
+} */
+/* .btn-consult {
   width: 380px;
   padding: 8px;
   background-color: #e57661;
@@ -189,7 +188,7 @@
   text-transform: uppercase;
   font-size: 24px;
   font-weight: 600;
-}
+} */
 .btn-consult:hover,
 .btn-consult:active,
 .btn-consult:focus {
@@ -202,12 +201,12 @@
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
-  .consult {
+  /* .consult {
     padding: 50px;
   }
   .consult-images img {
     width: 250px;
-  }
+  } */
 }
 
 @media (min-width: 991.8px) and (max-width: 1200px) {
@@ -221,54 +220,54 @@
   .navbar-nav .nav-link {
     padding: 5px;
   }
-  .banner-box {
+  /* .banner-box {
     left: 160px;
-  }
-  .consult {
+  } */
+  /* .consult {
     padding: 50px;
-  }
-  .consult-images img {
+  } */
+  /* .consult-images img {
     width: 200px;
-  }
+  } */
 }
 
 @media (min-width: 768.8px) and (max-width: 991px) {
-  .banner-box {
+  /* .banner-box {
     left: 30px !important;
-  }
+  } */
 }
 
 @media (max-width: 991px) {
-  .consult-images {
+  /* .consult-images {
     display: none;
-  }
+  } */
 }
 @media (max-width: 768px) {
-  .banner-box {
+  /* .banner-box {
     width: 100%;
     padding: 25px;
     background-color: #fff;
     position: relative;
     top: 70px;
     left: 0;
-  }
-  .com-details {
+  } */
+  /* .com-details {
     padding: 50px 0;
     background-color: #EDF5FE;
-}
-  .details-title {
+} */
+  /* .details-title {
     margin-bottom: 30px;
-  }
-  .isotop-section {
+  } */
+  /* .isotop-section {
     padding: 50px 20px;
-}
+} */
 }
 
 @media (max-width: 576px) {
-  .banner-box {
+  /* .banner-box {
     display: none !important;
-  }
-  .banner-inner p {
+  } */
+  /* .banner-inner p {
     padding: 20px 10px 0;
     width: 100%;
     margin: 0 auto;
@@ -293,6 +292,6 @@
     width: 300px;
     font-size: 18px;
     font-weight: 500;
-  }
+  } */
 }
 

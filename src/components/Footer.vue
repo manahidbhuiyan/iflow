@@ -1,5 +1,5 @@
 <template>
-    <div class="footer">
+    <div class="footer py-10 px-[10px] grid grid-cols-1 md:grid-cols-2 1200:grid-cols-4 991:gap-5 bg-[#0E2442] lg:px-10 lg:py-[50px] gap-7 ">
         <div class="footer-child-1">
             <p>
                 iFlowspace Sdn Bhd <br>
@@ -43,13 +43,13 @@
 
 </script>
 <style lang="css" scoped>
-.footer{
+/* .footer{
     background-color: #0E2442;
     padding: 50px 40px;
     display: grid;
-    grid-template-columns: 1fr; /* Default to 1 column */
-    gap: 30px; /* Adjust spacing between items as needed */
-}
+    grid-template-columns: 1fr; 
+    gap: 30px; 
+} */
 
 .footer-title{
     font-size: 20px !important;
@@ -113,24 +113,24 @@
 
 /* Medium devices (Tablets) */
 @media (min-width: 768px) {
-  .footer {
-    grid-template-columns: 1fr 1fr; /* 2 columns */
-  }
+  /* .footer {
+    grid-template-columns: 1fr 1fr; 
+  } */
 }
 
 /* Large devices (Desktops) */
 @media (min-width: 992px) {
-  .footer {
-    grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 columns */
-    gap: 20px; /* Adjust spacing between items as needed */
-  }
+  /* .footer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px; 
+  } */
 }
 
 /* small device */
 @media (max-width: 576px) {
-  .footer {
+  /* .footer {
     padding: 40px 10px;
-  }
+  } */
 }
 @media (max-width: 400px) {
   .mail-input {

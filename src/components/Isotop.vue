@@ -1,6 +1,6 @@
 <template>
   <div class="isotop-area">
-    <div class="button-group">
+    <div class="button-group flex justify-center items-center gap-7 mb-5">
       <button
         :class="{ active: activeButton === 1 }"
         @click="filter('.category-a', 1)"
@@ -14,7 +14,7 @@
         Residential
       </button>
     </div>
-    <div class="row isotope" ref="grid">
+    <div class="row isotope gap-5 py-5 px-0 bg-[#F6F7F9]" ref="grid">
       <div
         class="col-sm-12 col-md-6 col-lg-4 element-item category-a"
         v-if="itemsToShow >= 1"
@@ -102,7 +102,7 @@
       </div>
     </div>
 
-    <a class="viewMore" v-if="itemsToShow > 1" @click="viewMore">View More</a>
+    <a class="viewMore no-underline text-[#131839] text-2xl font-semibold cursor-pointer" v-if="itemsToShow > 1" @click="viewMore">View More</a>
   </div>
 </template>
 
@@ -161,12 +161,12 @@ export default {
   padding: 20px;
 }
 
-.isotope {
+/* .isotope {
   height: auto;
   gap: 20px !important;
   padding: 20px 0 !important;
   background: #F6F7F9;
-}
+} */
 
 .element-item {
   background: #F6F7F9;
@@ -204,21 +204,21 @@ export default {
   font-size: 16px;
   color: #000;
 }
-.viewMore {
+/* .viewMore {
   text-decoration: none;
   color: #131839 !important;
   font-size: 24px;
   font-weight: 600;
   cursor: pointer;
-}
+} */
 
-.button-group {
+/* .button-group {
   display: flex;
   justify-items: center;
   justify-content: center;
   gap: 30px;
   margin-bottom: 20px;
-}
+} */
 
 .button-group button {
   width: 230px;

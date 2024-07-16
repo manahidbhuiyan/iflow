@@ -1,16 +1,16 @@
 <template>
   <!-- banner area -->
-  <section class="banner">
-    <div class="banner-box">
-      <h5>what we do</h5>
-      <p>
+  <section class="banner pt-5 px-0 pb-10 overflow-hidden relative bg-white">
+    <div class="banner-box hidden sm:block sm:w-full md:w-[740px] p-6 pt-0 md:p-6 bg-white relative md:top-[65px] left-0 md:left-[30px] 991:left-[160px] 1200:left-[245px]">
+      <h5 class="text-3xl pb-2 capitalize font-semibold text-[#0e2442] ">what we do</h5>
+      <p class="text-3xl capitalize font-normal leading-10 text-[#0e2442] mb-0">
         We are driven by one goal: to create spaces that inspire people to do
         amazing things.
       </p>
     </div>
     <div class="banner-inner">
-      <img src="../assets/images/banner.png" alt="" />
-      <p>
+      <img class="w-full" src="../assets/images/banner.png" alt="" />
+      <p class="pt-3 sm:pt-5 md:pt-10 px-[10px] pb-0 my-0 mx-auto w-full md:w-4/5 text-base md:text-[28px] leading-7 md:leading-10 text-[#0e2442] text-center">
         <b>iFlowspace</b> is not just a platform that outsources everything to
         partners; we work closely with each professional as an in-house team to
         provide comprehensive business and residential solutions. From finding a
@@ -20,14 +20,16 @@
       </p>
     </div>
   </section>
+
+
   <!-- company details area -->
-   <section class="com-details">
+   <section class="com-details px-2 py-[30px] sm:px-20 sm:py-[50px] md:py-[70px] lg:px-32 bg-[#EDF5FE] ">
     <div class="container">
-      <h3 class="details-title">What we do</h3>
-      <div class="details-inner">
-  <div class="card card-1">
-    <h2>Design & Build</h2>
-    <p>Comprehensive management of your project from initial concept to final construction.</p>
+      <h3 class="details-title text-4xl font-semibold uppercase text-center mb-[30px] md:mb-[50px]">What we do</h3>
+      <div class="details-inner grid gap-4 grid-cols-1 576:grid-cols-2 991:grid-cols-3 1300:grid-cols-4 ">
+  <div class="card card-1 bg-[#e57661] text-white row-span-2 auto-rows-auto hover:bg-[#e57661]">
+    <h2 class="text-white text-3xl mb-5">Design & Build</h2>
+    <p class="text-2xl text-white">Comprehensive management of your project from initial concept to final construction.</p>
   </div>
   <div class="card card-2">
     <h2>Office Space</h2>
@@ -72,29 +74,32 @@
 </div>
     </div>
    </section>
+   
   <!-- isotop area -->
-  <section class="isotop-section">
+  <section class="isotop-section py-[50px] px-5 md:py-20 bg-[#f6f7f9] text-center h-auto ">
     <IsotopeGrid />
   </section>
   <!-- consult area -->
-  <section class="consult">
-    <div class="consult-content">
-      <div class="consult-images">
-        <img src="../assets/images/image 18.png" alt="" />
-        <img src="../assets/images/image 21.png" alt="" />
-        <img src="../assets/images/image 19.png" alt="" />
-        <img src="../assets/images/image 20.png" alt="" />
+  <section class="consult py-[30px] px-[10px] 991:p-[50px] 1300:p-[70px] relative ">
+    <div class="consult-content relative z-20">
+      <div class="consult-images w-full hidden 991:flex justify-between gap-5 ">
+        <img class=" w-[20%]" src="../assets/images/image 18.png" alt="" />
+        <img class=" w-[20%]" src="../assets/images/image 21.png" alt="" />
+        <img class=" w-[20%]" src="../assets/images/image 19.png" alt="" />
+        <img class=" w-[20%]" src="../assets/images/image 20.png" alt="" />
       </div>
       <div class="consult-text">
-        <p>
+        <p class=" max-w-[720px] my-0 mx-auto py-[50px] px-0 text-2xl font-medium text-center text-white">
           We handle projects of all sizes, from small tasks to large
           architectural endeavors. <br /><br />
           Speak with our consultant, and we will assign a professional to cater
           to your specific property needs.
         </p>
       </div>
-      <div class="consult-button">
-        <button class="btn btn-consult">Talk to our consultant</button>
+      <div class="consult-button text-center">
+        <button class="btn btn-consult w-[300px] text-[18px] font-medium sm:w-[380px] 
+        sm:p-2 bg-[#e57661] border-[3px] border-[#f3f3f3] sm:text-white uppercase
+         sm:text-2xl sm:font-semibold ">Talk to our consultant</button>
       </div>
     </div>
   </section>
